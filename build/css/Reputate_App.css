@@ -1,0 +1,13 @@
+.arguments__wrap {
+  display: flex;
+width: 1260px;
+height: 1000px;
+}
+
+.arguments_1 {
+display: flex;
+border-radius: 20px;
+width: 847px;
+height: 1000px;
+background: #fff;
+}

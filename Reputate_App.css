@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Days One";
+  src: url('/build/fonts/Days One/DaysOne-Regular.woff2');
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url('/build/fonts/TT Travels/TTTravels-Regular.woff2');
+}
+@font-face {
+  font-family: "Days One";
+  src: url('/build/fonts/Days One/DaysOne-Regular.woff2');
+}
+
+body {
+  width: 100%;
+  background: #7A7A7A;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 950px;
+  background: url('./build/img/header/header_back.jpg');
+  justify-content: center;
+}
+
+.header__wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 1880px;
+  align-items: center;
+}
+
+nav {
+  border-radius: 40px;
+  padding: 7px 39px;
+  width: 1440px;
+  height: 54px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header__logo {
+  font-family:  "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+
+.icon-lang {
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  margin-right: 45px;
+  margin-left: auto;
+}
+.header__enter {
+  border-radius: 40px;
+  padding: 6px 24px;
+  width: 103px;
+  height: 40px;
+  font-family: "Days One", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+
+.arguments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arguments__wrap {
+  display: flex;
+  width: 1260px;
+  height: 1000px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.arguments-1 {
+  display: flex;
+  border-radius: 20px;
+  width: 847px;
+  height: 1000px;
+  background: #fff;
+  z-index: 0;
+  position: absolute;
+}
+
+.img-arguments {
+  background: url(./build/img/img-arguments.png);
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.arguments__button {
+  display: flex;
+  width: 336px;
+  height: 30px;
+  border: 1px solid #2f2f2f;
+  border-radius: 20px;
+  padding: 5px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.arguments__headline {
+  font-family: "Days One", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  font-size: 42px;
+  color: #000;
+}
+
+.Reputate-word {
+  font-family: "TT Travels", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1976d2;
+}
+
+.arguments__describe {
+  font-family: "TT Travels", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+.arguments__block {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 847px;
+  height: 1000px;
+  background: #fff;
+  justify-content: center;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.block-first {
+    position: absolute;
+    left: -250%;
+    z-index: 3;
+}
+
+
+.block-second {
+  position: absolute;
+  left: -250%;
+  transition: 1s;
+  z-index: 5;
+}
+
+
+.block-third {
+  position: absolute;
+  left: -250%;
+  transition: 1s;
+  z-index: 7;
+}
+
+.block-four {
+  position: absolute;
+  left: -250%;
+  transition: 1s;
+  z-index: 9;
+}
+
+.block-visibile {
+  position: absolute;
+  left: 0;
+  transition: 1s;
+}
+
+
