@@ -323,21 +323,136 @@ nav {
     align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .PR-process__describe-headline {
-font-family: "Days One", sans-serif;
-font-weight: 400;
-font-size: 42px;
-letter-spacing: 0.02em;
-text-align: center;
-color: #000;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.PR-process__frame-top {
+.PR-process__frame {
     display: flex;
 }
 
-.stripe-left-top {
+.stripe-left-top,
+.stripe-left-bottom {
     margin-right: 19.5px;
+}
+
+.PR-process__opportunities-blocks {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.PR-process__opportunities-block {
+    display: flex;
+}
+
+.PR-process__can-word {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: #000;
+    margin-left: 20px;
+}
+
+.PR-process__Reputate {
+font-family: "Days One", sans-serif;
+font-weight: 400;
+font-size: 42px;
+color: #1976d2;
+}
+
+.opportunities-block__left-arrow {
+    display: flex;
+    border-radius: 20px;
+    width: 596px;
+    height: 720px;
+    flex-direction: column;
+}
+.PR-process__describe-block {
+    display: flex;
+    height: 156px;
+    padding: 21px 23px 20px 24px;
+    flex-direction: column;
+}
+
+.PR-process__describe-block_wrap {
+    display: flex;
+    width: 549px;
+    height: 678px;
+}
+
+.PR-process__picture {
+    display: flex;
+    border-radius: 20px;
+    width: 824px;
+    height: 463px;
+    background: #d9d9d9;
+    margin-bottom: 20px;
+}
+
+.PR-process__opportunities-describe-small-block {
+    display: flex;
+border-radius: 20px;
+padding: 20px 40px;
+width: 824px;
+height: 237px;
+background: #040c50;
+}
+
+.PR-process__opportunities-describe-text {
+    display: flex;
+width: 745px;
+height: 191px;
+}
+
+.PR-process__opportunities-describe {
+font-family: "TT Travels", sans-serif;
+font-weight: 500;
+font-size: 20px;
+color: #fff;
+}
+
+.PR-process__arrow--right {
+    display: flex;
+    width: 180px;
+    margin-top: 220px;
+}
+.PR-process__arrow--left {
+    display: flex;
+    width: 180px;
+    margin-top: 220px;
+    margin-left: 24px;
+}
+
+.PR-process__color-blue {
+background: #1976d2;
+}
+
+.PR-process__start-now {
+    border-radius: 20px;
+    padding: 19px 23px;
+    width: 410px;
+    height: 58px;
+    background: #1976d2;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-left: 138px;
 }
