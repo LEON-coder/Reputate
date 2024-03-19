@@ -69,14 +69,15 @@ nav {
     font-weight: 400;
     font-size: 24px;
     color: #fff;
+    cursor: pointer;
 }
-
 .icon-lang {
     border-radius: 30px;
     width: 40px;
     height: 40px;
     margin-right: 45px;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .header__enter {
@@ -223,6 +224,10 @@ nav {
     background-position: bottom;
 }
 
+.hide-block-slide {
+
+}
+
 .arguments__button {
     display: flex;
     width: 336px;
@@ -271,10 +276,9 @@ nav {
 
 .block-first {
     position: absolute;
-    left: -250%;
+    left: 0%;
     z-index: 3;
 }
-
 .block-second {
     position: absolute;
     left: -250%;
