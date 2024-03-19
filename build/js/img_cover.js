@@ -21,6 +21,7 @@ imgArguments.addEventListener('click', function() {
     blockSecond.classList.remove('block-visibile');
     } else {
     blockSecond.classList.add('block-visibile');
+
     };
 }) ;
 
