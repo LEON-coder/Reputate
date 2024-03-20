@@ -9,8 +9,12 @@
 }
 
 @font-face {
-    font-family: "Days One";
-    src: url('build/fonts/Days One/DaysOne-Regular.woff2');
+    font-family: "Ubuntu";
+    src: url('build/fonts/Ubuntu/Ubuntu-Regular.woff2');
+}
+@font-face {
+    font-family: "Unbounded";
+    src: url('build/fonts/Unbounded/Unbounded-Medium.woff2');
 }
 
 body {
@@ -50,6 +54,7 @@ header {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 nav {
@@ -62,6 +67,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 65;
 }
 
 .header__logo {
@@ -222,10 +229,22 @@ nav {
     height: 1000px;
     background-size: cover;
     background-position: bottom;
+    position: relative;
 }
 
-.hide-block-slide {
-
+.button-block-slide {
+    position: absolute;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #2f2f2f;
+    border-radius: 20px;
+    padding: 16px 26px;
+    width: 221px;
+    height: 82px;
+    background: #ebebeb;
+    top: 470px;
+    right: 150px;
 }
 
 .arguments__button {
@@ -241,10 +260,10 @@ nav {
 
 .arguments__headline {
     font-family: "Days One", sans-serif;
-    font-size: 42px;
     font-weight: 400;
     font-size: 42px;
     color: #000;
+    margin-top: 30px;
 }
 
 .Reputate-word {
@@ -260,6 +279,7 @@ nav {
     font-weight: 500;
     font-size: 20px;
     color: #000;
+    margin-top: 20px;
 }
 
 .arguments__block {
@@ -459,4 +479,123 @@ background: #1976d2;
     justify-content: center;
     margin-top: auto;
     margin-left: 138px;
+}
+
+.advantages-our-service {
+    display: flex;
+    border-radius: 20px;
+width: 1440px;
+height: 931px;
+background: #fff;
+ padding: 54px 54px 20px 54px;
+}
+
+.advantages-our-service__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 1331px;
+
+}
+
+.advantages-our-service__logo {
+    width: 230px;
+    height: 58px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #1976d2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.advantages-our-service__advantages-describe {
+    display: flex;
+    height: 106px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages-our-service__headline {
+    font-family: "Days One", sans-serif;
+font-weight: 400;
+font-size: 42px;
+color: #000;
+    display: flex;
+width: 499px;
+height: 106px;
+}
+
+.advantages-our-service__input-block {
+    display: flex;
+    border-radius: 20px;
+    padding: 14px 23px;
+    width: 483px;
+    height: 82px;
+    backdrop-filter: blur(4px);
+    background: rgba(4, 12, 80, 0.5);
+}
+
+.advantages-our-service__input {
+    display: flex;
+    border-radius: 20px;
+    padding: 14px 23px;
+    width: 483px;
+    backdrop-filter: blur(4px);
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2f2f2f;
+    background: #fff;
+    height: 54px;
+    border: none;
+}
+
+.block-advantage__button {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0px 28px;
+    width: 237px;
+    height: 30px;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.sorting {
+width: 261px;
+height: 30px;
+}
+
+.block-advantage__describe {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 115px;
+    max-width: 320px;
+    width: auto;
+}
+
+.advantages-our-service__blocks-advantages {
+    display: flex;
+    margin-top: 298px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.block-advantage {
+    display: flex;
+    border-radius: 20px;
+    background: #040c50;
+    width: 430px;
+    height: 355px;
+}
+.block-advantage__wrap {
+    display: flex;
+    padding: 33px;
+    flex-direction: column;
 }
