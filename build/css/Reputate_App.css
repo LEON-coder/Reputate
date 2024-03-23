@@ -370,6 +370,14 @@ nav {
     height: 1000px;
 }
 
+.block-active {
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    z-index: 5;
+    top: 0;
+}
+
 .button-block-slide {
     position: absolute;
     font-family: "Days One", sans-serif;
@@ -384,9 +392,8 @@ nav {
     top: 470px;
     right: 150px;
     cursor: pointer;
-    z-index: 678;
+    z-index: 0;
 }
-
 .arguments__button {
     display: flex;
     width: 336px;
@@ -438,44 +445,60 @@ nav {
     position: absolute;
     left: 0;
     transition: 1s;
-    z-index: 5;
+    z-index: 2;
     top: 0;
 }
+
 .block-second {
     position: absolute;
-    left: -250%;
+     left: -250%;
+    transition: 1s;
+    z-index: 5;
+    top: 0;
     transition: 1s;
     z-index: 5;
 }
 
-.block--active {
+.block--default {
     position: absolute;
-    left: 0;
+     left: -250%;
     transition: 1s;
     z-index: 5;
+    top: 0;
 }
 
 .block-third {
     position: absolute;
-    left: -250%;
+     left: -250%;
+    transition: 1s;
+    z-index: 5;
+    top: 0;
     transition: 1s;
     z-index: 7;
 }
 
 .block-four {
     position: absolute;
-    left: -250%;
+     left: -250%;
+    transition: 1s;
+    z-index: 5;
+    top: 0;
     transition: 1s;
     z-index: 9;
 }
-
-.block-visibile {
-      position: absolute;
-    right: 0%;
-    z-index: 3;
-    width: 100%;
-    filter: brightness(0.8);
+.block-active {
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    z-index: 5;
 }
+.block-visible {
+    left: 0%;
+    width: 100%;
+    filter: brightness(0.6);
+}
+
+
 
 .PR-process {
     margin-top: 20px;
@@ -650,7 +673,7 @@ background: #1976d2;
     display: flex;
     border-radius: 20px;
     width: 1440px;
-    height: 931px;
+    height: auto;
     background: #fff;
     padding: 54px 54px 20px 54px;
     margin-top: 20px;
@@ -759,9 +782,19 @@ height: 30px;
 
 .advantages-our-service__blocks-advantages {
     display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 513px;
+}
+.advantages-our-service__blocks-advantages:nth-child(1) {
+    display: flex;
     margin-top: 298px;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+    height: auto;
 }
 
 .block-advantage {
@@ -1325,7 +1358,9 @@ width: 60px;
     padding-right: 86px;
 }
 }
-@media screen and (max-width: 640px) {
+
+
+@media screen and (max-width: 768px) {
     .content {
     padding: 0 0px;
     width: 100%;
@@ -1346,17 +1381,73 @@ header {
     padding-right: 0px;
 }
 
-
-nav {
-    height: 77px;
-    position: fixed;
-    z-index: 65;
-    border-radius: 0 0 10px 10px;
-    box-shadow: none;
-    width: 100%;
-    padding: 0 0;
+.header__logo--mobile {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    left: 45px;
+    top: 60px;
 }
 
+.buttom-close {
+    position: absolute;
+    border-radius: 30px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    right: 20px;
+    z-index: 67;
+    background: #fff;
+    cursor: pointer;
+}
+
+.svg-icon-block-mobile {
+    position: absolute;
+    top: 250px;
+    left: 58px;
+    border-radius: 40px;
+    padding: 6px 24px;
+    margin-right: 45px;
+    margin-left: auto;
+    width: 88px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__enter--mobile {
+    display: flex;
+    position: absolute;
+    left: 58px;
+    top: 180px;
+    font-family: "Days One", sans-serif;
+    align-items: center;
+    text-decoration: none;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    border-radius: 40px;
+    padding: 6px 24px;
+    width: 103px;
+    height: 40px;
+    background: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2f2f2f;
+}
+
+nav {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
 .nav__burger-menu {
     display: flex;
     position: relative;
@@ -1463,9 +1554,24 @@ nav {
 }
 
 .burger-menu-show {
-  display: flex;
+    height: 100%;
+    position: fixed;
+    z-index: 65;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+     background: #1976D2;
 }
 
+.social_block-mobile {
+    position: absolute;
+    top: 590px;
+    left: 45px;
+    align-items: baseline;
+}
 
 .header__block-text_subtitle {
     font-size: 12px;
@@ -1585,8 +1691,8 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
 }
-
 .arguments__button {
     font-weight: 400;
     font-size: 8px;
@@ -1640,7 +1746,7 @@ nav {
 
 .PR-process__opportunities-blocks {
     margin-top: 20px;
-    display: flex;
+    display: none;
     align-items: center;
     width: 100%;
     justify-content: center;
@@ -1847,6 +1953,7 @@ nav {
     flex-direction: column;
     margin-top: 10px;
     max-width: 260px;
+    padding-left: 35px;
 }
 
 .block-advantage__button {
@@ -2053,6 +2160,13 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+}
+
+.mobile-menu-links {
+    position: absolute;
+    top: 684px;
+    width: 215px;
+    height: 85px;
 }
 
 .enter-button {
@@ -2273,17 +2387,7 @@ background: rgba(255, 255, 255, 0.5);
     height: 100%;
     top: -800px;
 }
-.burger-menu-show {
-    height: 100%;
-    position: fixed;
-    z-index: 65;
-    width: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    background: #1976D2;
-}
+
 
 .mobile-menu-links {
     position: absolute;
@@ -2371,6 +2475,7 @@ background: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
     padding-left: 45px;
+     background: #1976D2;
 }
 
 .header__block-text_subtitle {
@@ -2535,9 +2640,21 @@ background: rgba(255, 255, 255, 0.5);
 
 
 .button-block-slide {
-    display: none;
+    position: absolute;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #2f2f2f;
+    border-radius: 20px;
+    padding: 16px 26px;
+    width: 221px;
+    height: 82px;
+    background: #ebebeb;
+    top: 470px;
+    right: 150px;
+    cursor: pointer;
+    z-index: 1;
 }
-
 .PR-process__opportunities-blocks {
     margin-top: 20px;
     display: none;
@@ -2626,15 +2743,14 @@ background: rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
     font-size: 12px;
     height: auto;
-    padding-left: 24px;
+    padding-left: 0;
 }
 .advantages-our-service__wrap {
     width: 100%;
     padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
 .beta-out {
     font-family: "Days One", sans-serif;
     font-weight: 400;
@@ -2751,6 +2867,7 @@ background: rgba(255, 255, 255, 0.5);
     flex-direction: column;
     margin-top: 10px;
     max-width: 260px;
+    padding-left: 35px;
 }
 
 .block-advantage__button {
