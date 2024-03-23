@@ -1326,7 +1326,6 @@ width: 60px;
 }
 }
 @media screen and (max-width: 640px) {
-
     .content {
     padding: 0 0px;
     width: 100%;
@@ -2089,7 +2088,6 @@ footer {
 
 }
 @media screen and (max-width: 425px) {
-
     .content {
     padding: 0 0px;
     width: 100%;
@@ -2099,10 +2097,9 @@ header {
     height: auto;
     width: 100%;
     background: url(/build/img/header/header_back-mobile.png);
-    background-size: contain;
     position: relative;
+    background-size: contain;
 }
-
 .header__block-text-picture {
     display: flex;
 }
@@ -2406,11 +2403,7 @@ background: rgba(255, 255, 255, 0.5);
 }
 
 .headline {
-    height: 38px;
-    font-size: 30px;
-    font-weight: 400;
-    font-size: 30px;
-    margin-top: 5px;
+    width: auto;
 }
 
 .block-headline-app {
