@@ -12,22 +12,22 @@ let argumentsBlock = document.querySelector('.arguments__block')
 buttonSlider.addEventListener('click', function() {
   if(blockFirst.classList.contains('block-visibile')) {
     blockFirst.classList.remove('block-visibile');
-     blockSecond.classList.add('block--active');
+
     } else {
     blockFirst.classList.add('block-visibile');
-     blockSecond.classList.remove('block--active');
+     blockSecond.classList.add('block--active');
     };
 });
 
-// buttonSlider.addEventListener('click', function() {
-//   if(blockSecond.classList.contains('block-visibile')) {
-//     blockSecond.classList.remove('block-visibile');
-//     blockSecond.classList.remove('block-visibile');
-//   } else {
-//      blockSecond.classList.add('block-visibile');
-//     blockThird.classList.add('block-second--active');
-//     };
-// }) ;
+buttonSlider.addEventListener('click', function() {
+  if( blockSecond.classList.add('block--active')) {
+    blockSecond.classList.remove('block-visibile');
+      blockSecond.classList.add('block-visibile');
+  } else {
+     blockSecond.classList.add('block-visibile');
+    blockThird.classList.add('block--active');
+    };
+}) ;
 
 // buttonSlider.addEventListener('click', function() {
 //   if(blockThird.classList.contains('block-visibile')) {
