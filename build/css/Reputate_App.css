@@ -2491,11 +2491,9 @@ background: rgba(255, 255, 255, 0.5);
 }
 
 .arguments__blocks-slider {
-    flex-direction: column;
-    align-items: center;
     width: 100%;
+    height: auto;
 }
-
 .arguments__button {
     font-weight: 400;
     font-size: 8px;
@@ -2549,11 +2547,15 @@ background: rgba(255, 255, 255, 0.5);
 
 .PR-process__opportunities-blocks {
     margin-top: 20px;
-    display: flex;
+    display: none;
     align-items: center;
     width: 100%;
     justify-content: center;
     flex-direction: column;
+}
+
+.PR-process__opportunities-blocks-mobile {
+    display: flex;
 }
 
 .opportunities-block__left-arrow {

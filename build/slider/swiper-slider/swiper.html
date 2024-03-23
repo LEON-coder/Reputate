@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="swiper.css">
+</head>
+
+<body>
+  <<div id="app">
+    <div class="demo-nav">
+      <label>
+        <span>slidesPerView:</span>
+        <span class="spv">1</span>
+        <span class="dropdown">
+          <span data-value="1">1</span>
+          <span data-value="2">2</span>
+          <span data-value="3">3</span>
+          <span data-value="4">4</span>
+          <span data-value="5">5</span>
+        </span>
+      </label>
+      <label>
+        <input type="checkbox">
+        <span>centeredSlides</span>
+      </label>
+    </div>
+    <div class="demo-slider">
+      <!-- Material slider -->
+      <div class="swiper swiper-material swiper-initialized swiper-horizontal swiper-watch-progress"
+        style="--swiper-material-slide-size: 800px;">
+        <div class="swiper-wrapper" style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;">
+          <div class="swiper-slide" style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <!-- Wrap each slide content with "swiper-material-wrapper" and "swiper-material-content" elements -->
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <!-- Use data-swiper-material-scale to add scale effect on required elements -->
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/01.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <!-- Use swiper-material-animate-opacity class to add opacity animation on required elements -->
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 625; transition-duration: 0ms;">Slide 1</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-816px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/02.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 256; transition-duration: 0ms;">Slide 2</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-1632px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/03.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 81; transition-duration: 0ms;">Slide
+                  3</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-2448px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/04.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 16; transition-duration: 0ms;">Slide 4</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-3264px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/05.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 1; transition-duration: 0ms;">Slide 5</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-prev"
+            style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-4080px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/06.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 0; transition-duration: 0ms;">Slide 6</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active"
+            style="width: 800px; --swiper-material-scale: 1; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 100%; transform: translate3d(-4896px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/07.jpg"
+                  style="transform: scale(1); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 1; transition-duration: 0ms;">Slide 7</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-next"
+            style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-4912px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/08.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 0; transition-duration: 0ms;">Slide 8</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-5728px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/09.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 1; transition-duration: 0ms;">Slide 9</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="width: 800px; --swiper-material-scale: 0; margin-right: 16px;">
+            <div class="swiper-material-wrapper"
+              style="width: 0%; transform: translate3d(-6544px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-material-content">
+                <img class="demo-material-image" data-swiper-material-scale="1.25" src="images/10.jpg"
+                  style="transform: scale(1.25); transition-duration: 0ms;">
+                <span class="demo-material-label swiper-material-animate-opacity"
+                  style="opacity: 16; transition-duration: 0ms;">Slide 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon="{&quot;token&quot;: &quot;d5995edd070d46648a23e22cd091bda0&quot;}"
+      style="display: none !important;"></script>
+    <script src="swiper.js"></script>
+</body>
+
+</html>

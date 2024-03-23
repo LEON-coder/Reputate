@@ -1,24 +1,709 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-</head>
-<body>
-  <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-  <div><h3>1</h3></div>
-  <div><h3>2</h3></div>
-  <div><h3>3</h3></div>
-  <div><h3>4</h3></div>
-  <div><h3>5</h3></div>
-  <div><h3>6</h3></div>
-</div>
+<html lang="ru">
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+<head>
+  <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <div class="ad"></div>
+    <div class="header__bottom">
+      <div class="header__items">
+        <ol class="header__items_inner block_inner">
+          <div class="header__empty"></div>
+          <div class="header__empty"></div>
+          <div class="header__empty"></div>
+          <li class="header__item"><a class="header__link" href="dist/html/base.html">Сервисы и ТО</a></li>
+          <li class="header__item"><a class="header__link" href="dist/html/catalog.html">Авто с пробегом</a></li>
+          <li class="header__item"><a class="header__link" href="href">Юр. лицам и ИП</a></li>
+          <li class="header__item"><a class="header__link" href="href">Сотрудничество</a></li>
+          <div class="country"><img class="country__icon" src="dist/images/country.png">
+            <p class="country__p">Ваша страна</p>
+          </div>
+        </ol>
+      </div>
+      <div class="header__list">
+        <div class="header__list_inner block_inner">
+          <div class="block-logo-category">
+            <div class="logo">
+              <p class="logo__p">aur</p><span class="logo__span">auto</span>
+            </div>
+
+            <div class="category"><img class="category__img" src="dist/images/category.png">
+              <p class="category__p">Все категории</p>
+            </div>
+            </div>
+            <div class="search">
+              <input class="search__input" placeholder="Поиск по объявлениям"><a class="search__button" href="#">Найти</a>
+            </div>
+            <div class="auth hidden_1240"><a class="auth__button" href="#">Авторизация</a></div>
+            </div>
+            </div>
+            </div>
+            </header>
+            <div class="content">
+              <div class="block_inner" id="main">
+                <h1>Быстро выбрать и выгодно купить авто от официального дилера</h1>
+                <div class="main__p">Найдите самые выгодные цены на покупку, обслуживание и ремонт авто</div>
+                <div class="main__list">
+                  <div class="main__checkboxes">
+                    <div class="main__checkbox_container">
+                      <input class="main__radio" type="radio" name="auto" id="all_auto" checked>
+                      <label class="main__checkbox_label" for="all_auto"><span>Все авто</span></label>
+                    </div>
+                    <div class="main__checkbox_container">
+                      <input class="main__radio" type="radio" name="auto" id="new">
+                      <label class="main__checkbox_label" for="new"><span>Новые авто</span></label>
+                    </div>
+                    <div class="main__checkbox_container">
+                      <input class="main__radio" type="radio" name="auto" id="probeg">
+                      <label class="main__checkbox_label" for="probeg"><span>С пробегом</span></label>
+                    </div>
+                    <div class="main__checkbox_container">
+                      <input class="main__checkbox" type="checkbox" id="all_country" checked>
+                      <label class="hidden_1000 main__checkbox_label" for="all_country"><span>Все страны</span></label>
+                    </div>
+                  </div>
+                  <div class="main__countries"><img class="main__country_img" src="dist/images/country1.png"><img
+                      class="main__country_img" src="dist/images/country2.png"><img class="main__country_img"
+                      src="dist/images/country3.png"><img class="main__country_img" src="dist/images/country4.png">
+                  </div>
+                </div>
+                <div class="main__input_group">
+                  <div class="main__square">
+                    <select class="main__input_item select">
+                      <option class="main__option">Модель</option>
+                    </select>
+                    <select class="main__input_item select">
+                      <option class="main__option">Марка</option>
+                    </select>
+                    <div class="main__input_item">
+                      <input class="main__input" value="300 000"><span>Цена от, р.</span>
+                    </div>
+                    <div class="main__input_item">
+                      <input class="main__input" value="2 300 000"><span>До</span>
+                    </div>
+                  </div>
+                  <div class="main__square">
+                    <select class="main__input_item select">
+                      <option class="main__option">Коробка</option>
+                    </select>
+                    <select class="main__input_item select">
+                      <option class="main__option">Привод</option>
+                    </select>
+                    <select class="main__input_item select">
+                      <option class="main__option">Кузов</option>
+                    </select>
+                    <select class="main__input_item select">
+                      <option class="main__option">Цвет</option>
+                    </select>
+                  </div>
+                  <div class="main__square">
+                    <select class="main__input_item select">
+                      <option class="main__option">Двигатель</option>
+                    </select>
+                    <div class="main__input_item">
+                      <input class="main__input" value="1.4 - 4.6"><span>Объем, л..</span>
+                    </div>
+                    <div class="main__input_item">
+                      <input class="main__input" value="80 - 415"><span>Мощность л,с.</span>
+                    </div>
+                    <div class="main__input_item">
+                      <input class="main__input" value="6,8 - 20"><span>Разгон дл 100, с.</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="main__button">Показать 1377 авто</button>
+              </div>
+              <div class="block_inner" id="marks">
+                <h2>Марки новых авто</h2>
+                <div class="marks__list"><img class="marks__mark_img" src="dist/images/mark_1.png"><img class="marks__mark_img"
+                    src="dist/images/mark_2.png"><img class="marks__mark_img" src="dist/images/mark_3.png"><img
+                    class="marks__mark_img" src="dist/images/mark_4.png"><img class="marks__mark_img"
+                    src="dist/images/mark_5.png"><img class="marks__mark_img" src="dist/images/mark_6.png"><img
+                    class="marks__mark_img" src="dist/images/mark_7.png"><img class="marks__mark_img"
+                    src="dist/images/mark_8.png"><img class="marks__mark_img" src="dist/images/mark_9.png"><img
+                    class="marks__mark_img" src="dist/images/mark_10.png"><img class="marks__mark_img"
+                    src="dist/images/mark_11.png"><img class="marks__mark_img" src="dist/images/mark_12.png"><img
+                    class="marks__mark_img" src="dist/images/mark_13.png"><img class="marks__mark_img"
+                    src="dist/images/mark_14.png"><img class="marks__mark_img" src="dist/images/mark_15.png"><img
+                    class="marks__mark_img" src="dist/images/mark_16.png">
+                </div>
+                <div class="marks__items">
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon1.png">
+                    <p class="marks__item_p">Легковые авто</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon2.png">
+                    <p class="marks__item_p">Грузовые авто</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon3.png">
+                    <p class="marks__item_p">Мототехника</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon4.png">
+                    <p class="marks__item_p">Сельхозтехника</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon5.png">
+                    <p class="marks__item_p">Спец.техника</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon6.png">
+                    <p class="marks__item_p">Прицепы</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon7.png">
+                    <p class="marks__item_p">Водный транспорт</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon8.png">
+                    <p class="marks__item_p">Шины, диски</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon9.png">
+                    <p class="marks__item_p">Аксессуары</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon10.png">
+                    <p class="marks__item_p">Запчасти, расходники</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon11.png">
+                    <p class="marks__item_p">Инструмент</p>
+                  </div>
+                  <div class="marks__item"><img class="marks__item_img" src="dist/images/mark_icon12.png">
+                    <p class="marks__item_p">Услуги для авто</p>
+                  </div>
+                </div>
+              </div>
+              <div id="maintenance">
+                <div class="maintenance__container block_inner">
+                  <p class="maintenance__title">Техобслуживание со скидкой до 60%</p>
+                  <p class="maintenance__text">Экономия до 50 000 Р на обслуживание авто. Сравните цены и<br>выберите лучшее
+                    предложение.</p>
+                  <div class="maintenance__list">
+                    <select class="maintenance__select select">
+                      <option class="maintenance__option">Марка</option>
+                    </select>
+                    <select class="maintenance__select select">
+                      <option class="maintenance__option">Марка</option>
+                    </select>
+                    <select class="maintenance__select select">
+                      <option class="maintenance__option">Марка</option>
+                    </select>
+                    <select class="maintenance__select select">
+                      <option class="maintenance__option">Марка</option>
+                    </select>
+                    <select class="maintenance__select select">
+                      <option class="maintenance__option">Марка</option>
+                    </select>
+                    <button class="maintenance__button">Показать 1377 сервисов</button>
+                  </div>
+                </div>
+              </div>
+              <div class="block_inner" id="offers">
+                <div class="offers__header">
+                  <p class="offers__title show_1000">Лучшие предложения<span class="hidden_1000"></span></p>
+                  <div class="offers__arrows"><img class="slider__arrow_left" src="dist/images/slider_arrow_left.png"
+                      id="offers_one"><img class="slider__arrow_right" src="dist/images/slider_arrow_right.png" id="offers_one">
+                  </div>
+                  <p class="offers__title hidden_1000">Лучшие предложения<span></span></p><a class="offers__button"
+                    href="#">Смотреть все</a>
+                </div>
+                <div class="slider offers__slider" id="offers_one">
+                  <div class="slider__container">
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_13.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left"></p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_11.png">
+                          <p>NISSAN</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Nissan Murano</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car1.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_13.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_6.png">
+                          <p>MAZDA</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand2.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand3.png">
+                          <p>MAZDA</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block_inner" id="offers">
+                <div class="offers__header">
+                  <p class="offers__title show_1000">Новые объявления<span class="hidden_1000"></span></p>
+                  <div class="offers__arrows"><img class="slider__arrow_left" src="dist/images/slider_arrow_left.png"
+                      id="offers_two"><img class="slider__arrow_right" src="dist/images/slider_arrow_right.png" id="offers_two">
+                  </div>
+                  <p class="offers__title hidden_1000">Новые объявления<span></span></p><a class="offers__button" href="#">Смотреть
+                    все</a>
+                </div>
+                <div class="slider offers__slider" id="offers_two">
+                  <div class="slider__container">
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand1.png">
+                          <p>NISSAN</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car1.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_11.png">
+                          <p>NISSAN</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Nissan Murano</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car1.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_13.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_6.png">
+                          <p>Mazda </p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand2.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand3.png">
+                          <p>MAZDA</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block_inner" id="offers">
+                <div class="offers__header">
+                  <p class="offers__title show_1000">Только на AURAUTO<span class="hidden_1000"></span></p>
+                  <div class="offers__arrows"><img class="slider__arrow_left" src="dist/images/slider_arrow_left.png"
+                      id="offers_three"><img class="slider__arrow_right" src="dist/images/slider_arrow_right.png" id="offers_three">
+                  </div>
+                  <p class="offers__title hidden_1000">Только на AURAUTO<span></span></p><a class="offers__button" href="#">Смотреть
+                    все</a>
+                </div>
+                <div class="slider offers__slider" id="offers_three">
+                  <div class="slider__container">
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_13.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_11.png">
+                          <p>NISSAN</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Nissan Murano</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car1.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_13.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_6.png">
+                          <p>MAZDA</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand2.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand3.png">
+                          <p>Mazda</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block_inner" id="offers">
+                <div class="offers__header">
+                  <p class="offers__title show_1000">Самые популярные<span class="hidden_1000"> авто</span></p>
+                  <div class="offers__arrows"><img class="slider__arrow_left" src="dist/images/slider_arrow_left.png"
+                      id="offers_four"><img class="slider__arrow_right" src="dist/images/slider_arrow_right.png" id="offers_four">
+                  </div>
+                  <p class="offers__title hidden_1000">Самые популярные<span> авто</span></p><a class="offers__button"
+                    href="#">Смотреть все</a>
+                </div>
+                <div class="slider offers__slider" id="offers_four">
+                  <div class="slider__container">
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_13.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_11.png">
+                          <p>NISSAN</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Nissan Murano</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car1.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_13.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/mark_6.png">
+                          <p>MAZDA</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand2.png">
+                          <p>RENAUT</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Renaut Arkana</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car2.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand3.png">
+                          <p>MAZDA</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Mazda 3</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car3.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                    <div class="slider__item">
+                      <div class="offers__card">
+                        <div class="offers__card_mark"><img src="dist/images/offers_brand4.png">
+                          <p>FORD</p>
+                        </div>
+                        <div class="offers__card_title">
+                          <p>Ford Focus</p><a href="#">Лучшая цена</a>
+                        </div><img class="offers__card_img" src="dist/images/offers_car4.png">
+                        <p class="offers__card_price">От 2 714 000 руб.</p>
+                        <p class="offers__card_left">Осталось 1 авто</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block_inner" id="advantages">
+                <h2>Преимущества <span class="advantages__span">AUR</span><span>AUTO</span></h2>
+                <div class="advantages__items">
+                  <div class="advantages__item"><img class="advantages__img" src="dist/images/advantages_car.png">
+                    <p class="advantages__p auto-oficial-diler">36 923 авто в наличии от официальных дилеров</p>
+                  </div>
+                  <div class="advantages__item"><img class="advantages__img" src="dist/images/advantages_search.png">
+                    <p class="advantages__p">Персональный подбор предложений на авто с дополнительной скидкой</p>
+                  </div>
+                  <div class="advantages__item"><img class="advantages__img" src="dist/images/advantages_price.png">
+                    <p class="advantages__p">Реальные цены и скидки мы получаем напрямую от дилеров</p>
+                  </div>
+                  <div class="advantages__item"><img class="advantages__img" src="dist/images/advantages_info.png">
+                    <p class="advantages__p">Вся информация есть у нас — вам не надо ехать к дилерам</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block_inner" id="partners">
+                <h2>Наши партнеры <span class="hidden_1000">—официальные дилеры</span></h2>
+                <p><img class="slider__arrow_left show_1000" id="slider__partners"
+                    src="dist/images/slider_arrow_left.png"><span>Более 1175 дилеров...</span><img
+                    class="slider__arrow_right show_1000" id="slider__partners" src="dist/images/slider_arrow_right.png"></p>
+                <div class="slider partners__slider" id="slider__partners"><img class="slider__arrow_left hidden_1000"
+                    id="slider__partners" src="dist/images/slider_arrow_left.png">
+                  <div class="slider__container">
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand1.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand1.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand2.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand3.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand4.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand5.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand6.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand2.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand3.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand4.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand5.png"></div>
+                    <div class="slider__item"><img class="partners__img" src="dist/images/partners_brand6.png"></div>
+                  </div><img class="slider__arrow_right hidden_1000" id="slider__partners" src="dist/images/slider_arrow_right.png">
+                </div>
+              </div>
+            </div>
+            <footer>
+              <div class="footer__inner block_inner">
+                <div class="footer__list">
+                  <div class="logo">
+                    <p class="logo__p">aur</p><span class="logo_theme_white logo__span">auto</span>
+                  </div>
+                  <p class="footer__p">Политика конфиденциальности<br>2023 ©Все права защищены</p>
+                </div>
+                <ul class="footer__ul">
+                  <li class="footer__li">О сайте</li>
+                  <li class="footer__li">Стать партнером</li>
+                  <li class="footer__li">Помощь</li>
+                </ul>
+                <div class="footer__list"><img class="footer__img" src="dist/images/google_play.png"><img class="footer__img"
+                    src="dist/images/app_store.png"></div>
+                <div class="footer__list">
+                  <div class="footer__p"><span class="help"> Нужна помощь? </span> Закажите бесплатную консультацию наших
+                    специалистов.Перезвоним через 15
+                    минут.</div>
+                  <div class="footer__search">
+                    <input class="footer__search__input" placeholder="+7 (930) 900 - 131 - 22 - 12">
+                    <button class="footer__search__button"><img class="footer__search__img" src="dist/images/search.png"></button>
+                  </div>
+                </div>
+              </div>
+            </footer>
 </body>
+<script type="text/javascript" src="dist/js/scripts.js"></script>
+
 </html>
