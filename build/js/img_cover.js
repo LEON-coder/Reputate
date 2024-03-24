@@ -5,9 +5,7 @@ let blockThird = document.querySelector('.block-third')
 let blockFour = document.querySelector('.block-four');
 let argumentsBlock = document.querySelector('.arguments__block');
 
-// Накладывание блоков с нижнего на верхний
-
-
+// Накладывание блоков друг на друга
 buttonSlider.addEventListener('click', function () {
 blockSecond.classList.add('block-active');
   if(blockFirst.classList.contains('.block-visible')) {
@@ -55,5 +53,4 @@ blockThird.addEventListener('click', function () {
   blockSecond.classList.remove('block-active');
   blockFirst.classList.remove('block-visible');
   blockFirst.classList.add('block-active');
-  //  blockFirst.classList.add('order-first');
 })
