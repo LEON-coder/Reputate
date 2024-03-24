@@ -830,12 +830,11 @@
     margin-left: calc(116% - 140px);
   }
 
-  .pr-process__slider {
+.pr-process__slider {
     width: 100%;
     position: relative;
-    display: flex;
+    display: none;
 }
-
 .offers__header {
     display: flex;
     z-index: 56;
