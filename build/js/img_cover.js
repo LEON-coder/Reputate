@@ -12,6 +12,7 @@ buttonSlider.addEventListener('click', function () {
 blockSecond.classList.add('block-active');
   if(blockFirst.classList.contains('.block-visible')) {
     blockFirst.classList.remove('.block-visible');
+    blockFirst.classList.remove('order-first');
     } else {
     blockFirst.classList.add('block-visible');
     };
@@ -19,7 +20,7 @@ blockSecond.classList.add('block-active');
 
 blockFirst.addEventListener('click', function () {
   blockThird.classList.add('block-active');
-  if( blockSecond.classList.contains('.block-visible')) {
+  if( blockSecond.classList.contains('.block-visible', '')) {
     blockSecond.classList.remove('.block-visible');
   } else {
        blockSecond.classList.add('block-visible');
@@ -47,12 +48,12 @@ blockFour.classList.toggle('block-active');
 });
 
 blockThird.addEventListener('click', function () {
-   blockFour.classList.remove('block-visibile');
-   blockFirst.classList.add('block--active');
-   blockFirst.classList.add('order--first');
-  if(blockFour.classList.contains('.block-visible')) {
-    blockFour.classList.remove('.block-visible');
-  } else {
-     blockFour.classList.add('block-visibile');
-  }
+  blockFour.classList.remove('block-visible');
+  blockThird.classList.remove('block-visible');
+  blockThird.classList.remove('block-active');
+  blockSecond.classList.remove('block-visible');
+  blockSecond.classList.remove('block-active');
+  blockFirst.classList.remove('block-visible');
+  blockFirst.classList.add('block-active');
+  //  blockFirst.classList.add('order-first');
 })
