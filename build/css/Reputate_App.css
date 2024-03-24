@@ -2395,7 +2395,7 @@ nav {
     margin-bottom: 5px;
 }
 .header__block-text {
-    background: url(./build/img/header/header_back-mobile.png) no-repeat;
+    background: url(../../build/img/header/header_back-mobile.png) no-repeat;
     margin-top: auto;
 }
 
@@ -2480,14 +2480,14 @@ nav {
 .arguments__block {
     flex-direction: column;
     border-radius: 20px;
-    width: 400px;
+    width: 350px;
     height: 400px;
     padding-left: 48px;
     margin-left: 0;
 }
 .arguments__wrap {
     max-width: 650px;
-    padding: 0 70px;
+    padding: 0 0px;
     display: flex;
     height: 400px;
 }
@@ -2521,12 +2521,6 @@ nav {
     color: #000;
 }
 
-.img-arguments {
-    border-radius: 10px;
-    width: 110%;
-    height: 100%;
-}
-
 .block-first {
     position: absolute;
     left: 0;
@@ -2552,7 +2546,9 @@ nav {
 }
 
 .button-block-slide {
-    display: none;
+    display: flex;
+    top: 160px;
+    right: 30px;
 }
 
 .block-visible {
