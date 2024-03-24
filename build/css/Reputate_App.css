@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: "Days One";
-    src: url('/build/fonts/Days One/DaysOne-Regular.woff2');
+    src: url('../../build/fonts/Days One/DaysOne-Regular.woff2');
 }
 
 @font-face {
     font-family: "TT Travels";
-    src: url('/build/fonts/TT Travels/TTTravels-Regular.woff2');
+    src: url('../../build/fonts/TT Travels/TTTravels-Regular.woff2');
 }
 
 @font-face {
     font-family: "Ubuntu";
-    src: url('/build/fonts/Ubuntu/Ubuntu-Regular.woff2');
+    src: url('../../build/fonts/Ubuntu/Ubuntu-Regular.woff2');
 }
 @font-face {
     font-family: "Unbounded";
-    src: url('/build/fonts/Unbounded/Unbounded-Medium.woff2');
+    src: url('../../build/fonts/Unbounded/Unbounded-Medium.woff2');
 }
 
 body {
