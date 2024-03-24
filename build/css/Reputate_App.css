@@ -49,26 +49,26 @@ img {
     flex-direction: column;
     width: 1440px;
     align-items: center;
-    padding: 20px;
 }
 
 header {
     display: flex;
     width: 100%;
     height: 950px;
-    background: url('../../build/img/header/header_back.jpg');
+    background: url(../../build/img/header/header_back.jpg);
     justify-content: center;
     border-radius: 20px;
+    background-size: cover;
+    background-position: bottom;
 }
-
 
 .header__wrap {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 230px;
+    padding-right: 230px;
 }
 nav {
     border-radius: 40px;
@@ -411,8 +411,8 @@ nav {
     font-size: 42px;
     color: #000;
     margin-top: 30px;
+    width: 90%;
 }
-
 .Reputate-word {
     font-family: "TT Travels", sans-serif;
     font-weight: 500;
@@ -491,14 +491,19 @@ nav {
     left: 0;
     transition: 1s;
     z-index: 5;
+    width: 889px;
 }
 .block-visible {
     left: 0%;
     width: 100%;
-    filter: brightness(0.6);
+    filter: brightness(0.7);
+    -webkit-filter: brightness(.8);
+    padding-right: 50px;
 }
 
-
+.order--first {
+z-index: 50;
+}
 
 .PR-process {
     margin-top: 20px;
@@ -1367,18 +1372,18 @@ width: 60px;
 }
 
 header {
-    height: auto;
-    width: 100%;
-    background: none;
+    height: 950px;
+    background: url(/build/img/header/header_back_tablet.png);
+    background-position: right;
 }
 
 .header__block-text-picture {
-    display: flex;
+    display: none;
 }
 .header__wrap {
     margin-top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 30px;
+    padding-right: 50px;
 }
 
 .header__logo--mobile {
@@ -1445,8 +1450,8 @@ header {
 
 nav {
     width: 100%;
-    border: none;
-    border-radius: 0;
+    max-width: 960px;
+    margin-top: 20px;
 }
 .nav__burger-menu {
     display: flex;
@@ -1462,63 +1467,20 @@ nav {
 
 .nav__wrap {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 90%;
+    justify-content: center;
 }
 
 .header__logo {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-.svg-icon-block {
-    margin-right: 45px;
-    margin-left: auto;
-    width: 88px;
-    height: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-.header__enter {
-    border-radius: 40px;
-    padding: 6px 24px;
-    width: 103px;
-    height: 40px;
-    font-family: "Days One", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    align-items: center;
-    display: none;
-    text-decoration: none;
-    color: #fff;
-    transition: .6s;
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
-    -ms-transition: .6s;
-    -o-transition: .6s;
 }
 
 .nav__burger-menu {
-    display: flex;
-    position: relative;
+    display: none;
     top: 0px;
     right: 30px;
-    border-radius: 40px;
-    padding: 6px 12px;
-    width: 44px;
-    height: 40px;
-    cursor: pointer;
-    top: 0px;
-    right: 39px;
 }
 
 .burger-stripe {
@@ -1591,9 +1553,7 @@ nav {
 .header__block-text {
     background: url(./build/img/header/header_back-mobile.png) no-repeat;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
+    margin-top: auto;
     background-size: cover;
     height: auto;
 }
@@ -2209,11 +2169,9 @@ footer {
 }
 
 header {
-    height: auto;
-    width: 100%;
-    background: url(/build/img/header/header_back-mobile.png);
-    position: relative;
-    background-size: cover;
+    height: 950px;
+    background: url(/build/img/header/header_back_tablet.png);
+    background-position: right;
 }
 
 .header__block-text-picture {
@@ -2221,8 +2179,8 @@ header {
 }
 .header__wrap {
     margin-top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 30px;
+    padding-right: 50px;
 }
 
 .header__logo--mobile {
@@ -2264,6 +2222,26 @@ header {
     align-items: center;
 }
 
+.header__enter {
+    border-radius: 40px;
+    padding: 6px 24px;
+    width: 103px;
+    height: 40px;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    margin-right: 30px;
+}
+
 .header__enter--mobile {
     display: flex;
     position: absolute;
@@ -2289,80 +2267,13 @@ header {
 
 nav {
     width: 100%;
-    border: none;
-    border-radius: 0;
-}
-.nav__burger-menu {
-    display: flex;
-    position: relative;
-    top: 15px;
-    right: 30px;
-    border-radius: 40px;
-    padding: 6px 12px;
-    width: 44px;
-    height: 40px;
-    cursor: pointer;
+    max-width: 700px;
+    margin-top: 20px;
 }
 
 .nav__wrap {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
     width: 100%;
-}
-
-.header__logo {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-.svg-icon-block {
-    margin-right: 45px;
-    margin-left: auto;
-    width: 88px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-.header__enter {
-    border-radius: 40px;
-    padding: 6px 24px;
-    width: 103px;
-    height: 40px;
-    font-family: "Days One", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    align-items: center;
-    display: none;
-    text-decoration: none;
-    color: #fff;
-    transition: .6s;
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
-    -ms-transition: .6s;
-    -o-transition: .6s;
-}
-
-.nav__burger-menu {
-    display: flex;
-    position: relative;
-    top: 0px;
-    right: 30px;
-    border-radius: 40px;
-    padding: 6px 12px;
-    width: 44px;
-    height: 40px;
-    cursor: pointer;
-    top: 0px;
-    right: 39px;
+    max-width: 680px;
 }
 
 .burger-stripe {
@@ -2434,12 +2345,7 @@ nav {
 }
 .header__block-text {
     background: url(./build/img/header/header_back-mobile.png) no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
-    background-size: cover;
-    height: auto;
+    margin-top: auto;
 }
 
 .header__block-text-wrapper {
@@ -2533,13 +2439,12 @@ nav {
 .arguments__wrap {
     width: 100%;
     flex-direction: column;
+    padding: 0 70px;
 }
 
 .arguments__blocks-slider {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
+    display: flex;
+    border-radius: 20px;
 }
 .arguments__button {
     font-weight: 400;
@@ -2794,7 +2699,7 @@ nav {
 
 .advantages-our-service__blocks-advantages {
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 0px;
 }
 
 .block-advantage__button {
@@ -3052,7 +2957,7 @@ footer {
     display: none;
 }
 header {
-    height: auto;
+    height: 622px;
     width: 100%;
     background: url(/build/img/header/header_back-mobile.png);
     position: relative;
@@ -3076,6 +2981,7 @@ nav {
     box-shadow: none;
     width: 100%;
     padding: 0 0;
+    top: 0;
 }
 
 .nav__burger-menu {
@@ -3338,13 +3244,7 @@ background: rgba(255, 255, 255, 0.5);
     margin-bottom: 5px;
 }
 .header__block-text {
-    background: url(./build/img/header/header_back-mobile.png) no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 90px;
-    background-size: cover;
-    height: auto;
+    margin-top: auto;
 }
 
 .header__block-text-wrapper {
