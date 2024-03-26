@@ -1690,6 +1690,18 @@ picture {
     height: auto;
     width: auto;
 }
+
+.block-first {
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    z-index: 2;
+    top: 0;
+    width: 60%;
+    padding-right: 70px;
+}
+
+
 .arguments__button {
     font-weight: 400;
     font-size: 8px;
@@ -3881,9 +3893,13 @@ header {
 }
 
 .nav__wrap {
-    width: 90%;
-    max-width: 600px;
-    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    top: 0;
 }
 .nav__wrap--active {
     display: flex;
@@ -4760,6 +4776,18 @@ nav {
     width: 100%;
 }
 
+.buttom-close {
+    position: absolute;
+    border-radius: 30px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    right: 40px;
+    z-index: 67;
+    background: #fff;
+    cursor: pointer;
+}
 .header__block-text-picture {
     display: none;
 }
@@ -4778,7 +4806,9 @@ header {
     padding-left: 0px;
     padding-right: 0px;
 }
-
+.header__enter--mobile {
+    display: none;
+}
 .nav__burger-menu {
     display: flex;
     position: relative;
@@ -4797,6 +4827,8 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
+    border-radius: 0 0 10px 10px;
+    top: 0;
 }
 .nav__wrap--active {
     display: flex;
@@ -4935,21 +4967,12 @@ background: rgba(255, 255, 255, 0.5);
 
 .mobile-menu-links {
     position: absolute;
-    top: 684px;
-    width: 215px;
-    height: 85px;
+    top: 600px;
+    height: auto;
 }
 .buttom-close {
-    position: absolute;
-    border-radius: 30px;
-    padding: 15px;
-    width: 50px;
-    height: 50px;
     top: 60px;
-    right: 20px;
-    z-index: 67;
-    background: #fff;
-    cursor: pointer;
+    right: 40px;
 }
 
 .button-close-frame {
@@ -4958,7 +4981,7 @@ background: rgba(255, 255, 255, 0.5);
 
 .social_block-mobile {
     position: absolute;
-    top: 590px;
+    top: 520px;
     left: 45px;
     align-items: baseline;
 }
@@ -5038,6 +5061,10 @@ background: rgba(255, 255, 255, 0.5);
 }
 .header__block-text {
     margin-top: auto;
+}
+
+.mobile-enter-button {
+    display: none;
 }
 
 .header__block-text-wrapper {
@@ -5585,13 +5612,6 @@ footer {
     height: auto;
 }
 
-.mobile-menu-links {
-    position: absolute;
-    top: 684px;
-    width: 215px;
-    height: 85px;
-}
-
 .footer__kind-contact {
     display: flex;
     border-radius: 20px;
@@ -5630,6 +5650,8 @@ footer {
     font-size: 12px;
 }
 
+
+
 .socilal-icons {
     margin-bottom: 19px;
 }
@@ -5650,6 +5672,7 @@ footer {
 
 .mobile-social-mofify {
     margin-top: 15px;
+    width: 152px;
 }
 
 .advantages-our-service__input-block {
@@ -5660,7 +5683,6 @@ footer {
     font-weight: 400;
     font-size: 8px;
     color: #e1e1e1;
-    margin-left: auto;
 }
 .footer__kind-contact:hover .footer__number-phone {
     display: flex;
@@ -5690,6 +5712,17 @@ footer {
 }
 .footer__link {
     width: fit-content;
+    height: auto;
+}
+
+.mobile-menu-links {
+    position: absolute;
+    top: 684px;
+    height: auto;
+}
+.mobile-menu-links {
+    position: absolute;
+    top: 600px;
     height: auto;
 }
 .footer__wrap {
@@ -5749,15 +5782,40 @@ nav {
     padding-left: 0;
     padding-right: 0;
 }
-    .nav__wrap {
+.nav__wrap {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
     width: 100%;
-    padding: 0 39px;
+    border-radius: 0 0 10px 10px;
+    top: 0;
+}
+.buttom-close {
+    position: absolute;
+    border-radius: 30px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    right: 40px;
+    z-index: 67;
+    background: #fff;
+    cursor: pointer;
 }
 
+.social_block-mobile {
+    position: absolute;
+    top: 590px;
+    left: 45px;
+    align-items: baseline;
+}
+
+.mobile-menu-links {
+    position: absolute;
+    top: 684px;
+    height: auto;
+}
 .promo-testing-and-button-block {
     width: 100%;
     padding-left: 24px;
@@ -5814,9 +5872,7 @@ width: fit-content;
     display: flex;
     margin-top: 5px;
 }
-.footer__social-headline {
-    margin-left: auto;
-}
+
 .footer__kind-contact:hover .footer__number-phone {
     display: flex;
     width: auto;
