@@ -67,38 +67,33 @@ header {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
+    padding-left: 230px;
+    padding-right: 230px;
+    align-items: center;
 }
+
 nav {
-    border-radius: 40px;
-    padding: 7px 39px;
-    height: 54px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: #1976d2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 65;
     width: 100%;
+    max-width: 920px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    z-index: 30;
 }
-
 .nav__wrap {
+    display: flex;
+    align-items: center;
     position: fixed;
-    border-radius: 40px;
+    justify-content: center;
+    background: #1976d2;
     padding: 7px 39px;
     height: 54px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: #1976d2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 65;
-    width: 100%;
-    left: 0%;
-    top: 30px;
+    max-width: 1440px;
+    width: 90%;
+    border-radius: 40px;
 }
-
 .header__block-text-picture {
     display: none;
 }
@@ -221,6 +216,7 @@ nav {
     margin-top: 416px;
     display: flex;
     flex-direction: column;
+    width: 1440px;
 }
 
 .block-headline-app {
@@ -405,16 +401,13 @@ nav {
 }
 .arguments__button {
     display: flex;
-    width: fit-content;
+    width: 336px;
     height: 30px;
     border: 1px solid #2f2f2f;
     border-radius: 20px;
     padding: 5px 30px;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
-    font-size: 16px;
-    color: #2f2f2f;
 }
 
 .arguments__headline {
@@ -811,12 +804,11 @@ height: 30px;
 
 .advantages-our-service__blocks-advantages {
     display: flex;
-    padding-top: 198px;
+    margin-top: 20px;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    height: auto;
-    margin-bottom: 20px;
+    height: 513px;
 }
 .advantages-our-service__blocks-advantages:nth-child(1) {
     display: flex;
@@ -841,12 +833,7 @@ height: 30px;
     cursor: pointer;
 }
 
-.block-advantage:hover {
-    transform: translateY(-190px);
-    -webkit-transform: translateY(-190px);
-    -moz-transform: translateY(-158px);
-    -ms-transform: translateY(-158px);
-    -o-transform: translateY(-158px);
+.block-advantage:hover { transform: translateY(-158px) ; -webkit-transform: translateY(-158px) ; -moz-transform: translateY(-158px) ; -ms-transform: translateY(-158px) ; -o-transform: translateY(-158px) ;
 }
 
 
@@ -1265,10 +1252,6 @@ color: #e1e1e1;
     width: 100%;
 }
 
-nav {
-    width: 100%;
-}
-
 .header__wrap {
     margin-top: 30px;
     display: flex;
@@ -1412,6 +1395,826 @@ width: 60px;
 }
 
 
+@media screen and (max-width: 1200px) {
+    .content {
+    padding: 0 0px;
+    width: 100%;
+}
+
+header {
+    height: 950px;
+    background: url(../../build/img/header/header_back_tablet.png);
+    background-position: right;
+}
+
+.header__block-text-picture {
+    display: none;
+}
+.header__wrap {
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.header__logo--mobile {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    left: 45px;
+    top: 60px;
+}
+
+.buttom-close {
+    position: absolute;
+    border-radius: 30px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    right: 20px;
+    z-index: 67;
+    background: #fff;
+    cursor: pointer;
+}
+
+.svg-icon-block-mobile {
+    position: absolute;
+    top: 250px;
+    left: 58px;
+    border-radius: 40px;
+    padding: 6px 24px;
+    margin-right: 45px;
+    margin-left: auto;
+    width: 88px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__enter--mobile {
+    display: flex;
+    position: absolute;
+    left: 58px;
+    top: 180px;
+    font-family: "Days One", sans-serif;
+    align-items: center;
+    text-decoration: none;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    border-radius: 40px;
+    padding: 6px 24px;
+    width: 103px;
+    height: 40px;
+    background: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2f2f2f;
+}
+
+nav {
+    width: 100%;
+    max-width: 920px;
+    margin-top: 20px;
+}
+.nav__burger-menu {
+    display: flex;
+    position: relative;
+    top: 15px;
+    right: 30px;
+    border-radius: 40px;
+    padding: 6px 12px;
+    width: 44px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav__wrap {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    justify-content: center;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.nav__burger-menu {
+    display: none;
+    top: 0px;
+    right: 30px;
+}
+
+.burger-stripe {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    right: 11px;
+}
+
+.burger-stripe::before {
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+}
+
+.burger-stripe::after {
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+.burger-menu-show {
+    height: 100%;
+    position: fixed;
+    z-index: 65;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+     background: #1976D2;
+}
+
+.social_block-mobile {
+    position: absolute;
+    top: 590px;
+    left: 45px;
+    align-items: baseline;
+}
+
+.header__block-text_subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.block-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.header__block-text {
+    width: 100%;
+    margin-top: auto;
+    background-size: cover;
+    height: auto;
+}
+
+.header__block-text-wrapper {
+    padding: 0 20px;
+}
+
+.headline {
+    height: 38px;
+    font-size: 30px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.block-headline-app {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #040c50;
+    width: 100%;
+}
+.header__block-proposing-buttons {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 24px 11px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 43px;
+}
+.header__AI-headline {
+    font-size: 12px;
+    text-align: center;
+}
+
+.block-point {
+    display: none;
+}
+
+.buttons-both-block {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.PR-process {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.try-free {
+    max-width: 201px;
+    font-size: 12px;
+    padding: 10px 20px;
+    width: 201px;
+    height: 35px;
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+.know-more {
+    padding: 10px 20px;
+    width: 141px;
+    height: 35px;
+    font-size: 12px;
+}
+
+
+.arguments {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.arguments__block {
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px 20px;
+    align-items: center;
+    position: static;
+    margin-bottom: 10px;
+    position: absolute;
+    margin-left: 50px;
+    width: 50%;
+}
+.arguments__wrap {
+    width: 100%;
+    height: 1000px;
+    padding: 0 50px;
+}
+
+picture {
+    height: 100%;
+    width: 100%;
+}
+.arguments__blocks-slider {
+    height: auto;
+    width: auto;
+}
+.arguments__button {
+    font-weight: 400;
+    font-size: 8px;
+    color: #2f2f2f;
+    width: fit-content;
+    height: 20px;
+}
+
+.arguments__button:hover {
+    font-family: "Days One", sans-serif;
+    color: #1976d2;
+    border: 1px solid #1976d2;
+    width: auto;
+}
+
+.arguments__headline {
+    font-family: "Days One", sans-serif;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.arguments__describe {
+    font-family: "TT Travels", sans-serif;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+}
+
+.img-arguments {
+    width: 100%;
+    height: 100%;
+}
+
+.button-block-slide {
+    display: none;
+}
+
+.PR-process__opportunities-blocks {
+    margin-top: 20px;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+.opportunities-block__left-arrow {
+    width: 100%;
+    height: auto;
+}
+
+.PR-process__describe-block_wrap {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.PR-process__can-word {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.PR-process__arrow--right {
+    display: flex;
+    width: 50px;
+    margin-top: 20px;
+    transform: rotate(45deg);
+}
+
+.PR-process__Reputate {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1976d2;
+}
+
+.PR-process__describe-block {
+    display: flex;
+    height: auto;
+    padding: 21px 23px 20px 24px;
+    flex-direction: column;
+}
+
+
+.PR-process__picture {
+    width: 100%;
+    height: 193px;
+    margin-bottom: 0;
+}
+
+.PR-process__opportunities-describe-small-block {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-top: -10px;
+    z-index: -1;
+}
+
+.PR-process__opportunities-describe {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+}
+
+.PR-process__arrow--left {
+    display: flex;
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+.PR-process__start-now {
+    margin-left: 0;
+    width: 100%;
+}
+
+.advantages-our-service__logo {
+    margin-bottom: 20px;
+    font-size: 12px;
+    height: auto;
+    padding-left: 24px;
+}
+.advantages-our-service__wrap {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beta-out {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #5a5a5a;
+}
+
+.enjoy-testing {
+    font-weight: 600;
+    font-size: 16px;
+}
+.block-second {
+    position: absolute;
+    left: -250%;
+    transition: 1s;
+    z-index: 5;
+    top: 0;
+    transition: 1s;
+    z-index: 5;
+}
+
+.block-third {
+    position: absolute;
+    left: -250%;
+    transition: 1s;
+    z-index: 5;
+    top: 0;
+    transition: 1s;
+    z-index: 7;
+}
+
+.block-four {
+    position: absolute;
+    left: -250%;
+    transition: 1s;
+    z-index: 9;
+    order: 3;
+}
+.block-visible {
+    left: 0%;
+    width: 90%;
+    height: 100%;
+    filter: brightness(0.7);
+    -webkit-filter: brightness(.8);
+    padding-right: 50px;
+}
+
+.block-active {
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    z-index: 5;
+    height: 100%;
+}
+
+.Reputate-word {
+    font-family: "TT Travels", sans-serif;
+    color: #1976d2;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+
+.PR-process__opportunities-block {
+    display: flex;
+    width: 100%;
+}
+
+.PR-process__describe-headline {
+    font-family: "Days One", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #040c50;
+}
+.block-advantage {
+    width: 210px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.block-advantage__wrap {
+    display: flex;
+    padding: 22px 15px;
+    flex-direction: column;
+}
+
+.block-advantage:hover {
+    transform: translateX(90px);
+    -webkit-transform: translateX(90px);
+    -moz-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    -o-transform: translateX(90px);
+}
+
+.advantages-our-service {
+    width: 100%;
+    padding: 5px;
+    height: auto;
+}
+
+.advantages-our-service__Reputate {
+    width: 230px;
+    height: auto;
+    font-family: "Unbounded", sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #1976d2;
+}
+
+.advantages-our-service__advantages-describe {
+    width: 100%;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 35px;
+}
+
+.advantages-our-service__headline {
+    font-family: "Days One", sans-serif;
+    display: flex;
+    width: auto;
+    height: 106px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.advantages-second-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.advantages-our-service__blocks-advantages {
+    display: flex;
+    margin-top: 298px;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.block-advantage__button {
+    font-size: 8px;
+    width: auto;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.block-advantage__describe {
+    font-family: "TT Travels", sans-serif;
+    max-width: 320px;
+    width: auto;
+    font-weight: 500;
+    font-size: 8px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.promo-testing-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-free-try {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 10px 20px;
+    width: 201px;
+    height: 35px;
+    margin-left: auto;
+}
+
+.advantages-our-service__input-block {
+    max-width: 425px;
+    padding: 7px 10px;
+    width: 100%;
+    height: auto;
+}
+
+.advantages-our-service__input {
+    font-size: 8px;
+    width: 100%;
+    height: 18px;
+}
+.block-users-wrap {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.block-users-comments {
+    max-width: 874px;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+.promo-testing-and-button-block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.block-user-comment {
+    max-width: 432px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 48%;
+    height: auto;
+}
+
+.review {
+    max-width: 105px;
+    width: 50%;
+    font-weight: 500;
+    font-size: 6px;
+    color: #fff;
+    height: auto;
+    margin-left: 5px;
+    padding: 11px 10px 11px 5px;
+}
+
+.trusting-block {
+    max-width: 292px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.trusting-link {
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+}
+
+.trusting-block--arrow {
+    display: flex;
+    order: -1;
+    transform: rotate(180deg);
+    margin-bottom: 20px;
+    width: 40px;
+    height: 74px;
+}
+
+.media {
+    width: fit-content;
+    height: auto;
+    margin-bottom: 9px;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    background: #2f2f2f;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer__wrap {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 74px;
+    justify-content: center;
+    padding-left: 34px;
+    padding-right: 34px;
+    flex-direction: column;
+}
+
+.footer__link-left-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 219px;
+}
+
+.footer__contacts {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts-headline {
+    font-size: 8px;
+    margin-bottom: 5px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer__link {
+    font-family: "Days One", sans-serif;
+    color: #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.28px;
+    text-align: left;
+}
+
+.footer__kind-contact {
+    display: flex;
+    border-radius: 20px;
+    padding: 7px;
+    width: 38px;
+    height: 37px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-block {
+    padding: 5px 6px;
+    width: 154px;
+    height: 37px;
+}
+
+.phone-text {
+    font-family: "Days One", sans-serif;
+    margin-right: 30px;
+    transition: 1s;
+    font-weight: 400;
+    font-size: 12px;
+    color: #2f2f2f;
+}
+
+.footer__right-blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.mobile-menu-links {
+    position: absolute;
+    top: 684px;
+    width: 215px;
+    height: 85px;
+}
+
+.enter-button {
+    width: 102px;
+    height: 37px;
+    font-size: 12px;
+}
+
+.socilal-icons {
+    margin-top: 5px;
+    width: 253px;
+    align-items: center;
+}
+.social-icon {
+    display: flex;
+    border-radius: 30px;
+    background: #fff;
+    width: 37px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.advantages-our-service__input-block {
+    max-width: 425px;
+    padding: 7px 10px;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+}
 @media screen and (max-width: 1024px) {
     .content {
     padding: 0 0px;
@@ -1516,8 +2319,9 @@ nav {
     display: flex;
     align-items: center;
     position: fixed;
-    width: 85%;
+    width: 90%;
     justify-content: center;
+    margin-left: 0px;
 }
 
 .header__logo {
@@ -2233,8 +3037,6 @@ footer {
 }
 }
 
-
-
 @media screen and (max-width: 768px) {
     .content {
     padding: 0 0px;
@@ -2345,8 +3147,8 @@ nav {
 }
 
 .nav__wrap {
-    width: 100%;
-    max-width: 610px;
+    width: 90%;
+    max-width: 690px;
     padding: 0 20px;
 }
 
@@ -3079,11 +3881,9 @@ header {
 }
 
 .nav__wrap {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    width: 100%;
+    width: 90%;
+    max-width: 600px;
+    padding: 0 20px;
 }
 .nav__wrap--active {
     display: flex;
@@ -3861,16 +4661,8 @@ footer {
 }
 
 .footer__link {
-    font-family: "Days One", sans-serif;
-    color: #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
-    width: auto;
+    width: fit-content;
     height: auto;
-    margin-bottom: 10px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15.28px;
-    text-align: left;
 }
 
 .mobile-menu-links {
@@ -3958,9 +4750,10 @@ footer {
     padding: 0;
 }
 nav {
-    margin-top: 0;
-    border: none;
     border-radius: 0 0 10px 10px;
+    padding: 7px 39px;
+    width: 100%;
+    height: 77px;
 }
     .content {
     padding: 0 0px;
@@ -4947,6 +5740,23 @@ footer {
 }
 }
 @media screen and (min-width: 320px) and (max-width:380px) {
+
+nav {
+    border-radius: 0 0 10px 10px;
+    padding: 7px 39px;
+    width: 380px;
+    height: 77px;
+    padding-left: 0;
+    padding-right: 0;
+}
+    .nav__wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0 39px;
+}
 
 .promo-testing-and-button-block {
     width: 100%;
