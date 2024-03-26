@@ -2530,7 +2530,7 @@ nav {
     position: absolute;
     left: 0;
     transition: 1s;
-    z-index: 2;
+    z-index: 10;
     top: 0;
 }
 
@@ -2549,6 +2549,13 @@ nav {
     z-index: 7;
     order: 1;
 }
+.block-four {
+    position: absolute;
+    left: -250%;
+    transition: 1s;
+    z-index: 9;
+    order: 3;
+}
 
 .button-block-slide {
     display: flex;
@@ -2556,6 +2563,13 @@ nav {
     right: 30px;
 }
 
+.block-active {
+    position: absolute;
+    left: 0;
+    transition: 1s;
+    z-index: 13;
+    width: 50%;
+}
 .block-visible {
     left: 0%;
     width: 100%;
@@ -2564,15 +2578,6 @@ nav {
     -webkit-filter: brightness(.8);
     padding-right: 50px;
 }
-
-.block-active {
-    position: absolute;
-    left: 0;
-    transition: 1s;
-    z-index: 5;
-    width: 100%;
-}
-
 .PR-process__opportunities-blocks {
     margin-top: 20px;
     align-items: center;
@@ -2674,14 +2679,6 @@ nav {
 .enjoy-testing {
     font-weight: 600;
     font-size: 16px;
-}
-
-.block-four {
-    position: absolute;
-    left: -250%;
-    transition: 1s;
-    z-index: 9;
-    order: 3;
 }
 
 .Reputate-word {
