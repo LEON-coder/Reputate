@@ -67,9 +67,7 @@ header {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-left: 230px;
-    padding-right: 230px;
+    width: 1440px;
 }
 nav {
     border-radius: 40px;
@@ -80,15 +78,25 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     z-index: 65;
-    width: 1440px;
+    width: 100%;
 }
 
 .nav__wrap {
+    position: fixed;
+    border-radius: 40px;
+    padding: 7px 39px;
+    height: 54px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #1976d2;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    z-index: 65;
     width: 100%;
+    left: 0%;
+    top: 30px;
 }
 
 .header__block-text-picture {
@@ -397,13 +405,16 @@ nav {
 }
 .arguments__button {
     display: flex;
-    width: 336px;
+    width: fit-content;
     height: 30px;
     border: 1px solid #2f2f2f;
     border-radius: 20px;
     padding: 5px 30px;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2f2f2f;
 }
 
 .arguments__headline {
@@ -800,11 +811,12 @@ height: 30px;
 
 .advantages-our-service__blocks-advantages {
     display: flex;
-    margin-top: 20px;
+    padding-top: 198px;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    height: 513px;
+    height: auto;
+    margin-bottom: 20px;
 }
 .advantages-our-service__blocks-advantages:nth-child(1) {
     display: flex;
@@ -829,7 +841,12 @@ height: 30px;
     cursor: pointer;
 }
 
-.block-advantage:hover { transform: translateY(-158px) ; -webkit-transform: translateY(-158px) ; -moz-transform: translateY(-158px) ; -ms-transform: translateY(-158px) ; -o-transform: translateY(-158px) ;
+.block-advantage:hover {
+    transform: translateY(-190px);
+    -webkit-transform: translateY(-190px);
+    -moz-transform: translateY(-158px);
+    -ms-transform: translateY(-158px);
+    -o-transform: translateY(-158px);
 }
 
 
@@ -1249,7 +1266,7 @@ color: #e1e1e1;
 }
 
 nav {
-    width: 1260px;
+    width: 100%;
 }
 
 .header__wrap {
