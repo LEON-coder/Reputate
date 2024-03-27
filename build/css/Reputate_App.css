@@ -55,28 +55,40 @@ img {
 header {
     display: flex;
     width: 100%;
-    height: 950px;
-    background: url(../../build/img/header/header_back.jpg);
+    height: 54px;
     justify-content: center;
     border-radius: 20px;
     background-size: cover;
     background-position: bottom;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 56;
+}
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    background: url(../../build/img/header/header_back.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
 }
 
 .header__wrap {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 230px;
-    padding-right: 230px;
     align-items: center;
+    max-width: 1440px;
+    margin: 50px auto;
 }
 
 nav {
     width: 100%;
     max-width: 920px;
-    margin-top: 20px;
     justify-content: center;
     display: flex;
     z-index: 30;
@@ -217,8 +229,8 @@ nav {
     display: flex;
     flex-direction: column;
     width: 1440px;
+    margin-bottom: 49px;
 }
-
 .block-headline-app {
     display: flex;
     align-items: baseline;
@@ -401,13 +413,16 @@ nav {
 }
 .arguments__button {
     display: flex;
-    width: 336px;
+    width: fit-content;
     height: 30px;
     border: 1px solid #2f2f2f;
     border-radius: 20px;
     padding: 5px 30px;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2f2f2f;
 }
 
 .arguments__headline {
@@ -736,8 +751,8 @@ background: #1976d2;
     height: 106px;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 298px;
 }
-
 .advantages-our-service__headline {
     font-family: "Days One", sans-serif;
 font-weight: 400;
@@ -5707,6 +5722,15 @@ footer {
 
 
 @media screen and (min-width: 380px) and (max-width:425px) {
+
+    nav {
+    border-radius: 0 0 10px 10px;
+    padding: 7px 39px;
+    width: 100%;
+    height: 77px;
+    padding-left: 0;
+    padding-right: 0;
+}
 .block-advantage {
     margin-left: 35px;
 }
@@ -5777,7 +5801,7 @@ footer {
 nav {
     border-radius: 0 0 10px 10px;
     padding: 7px 39px;
-    width: 380px;
+    width: 100%;
     height: 77px;
     padding-left: 0;
     padding-right: 0;
