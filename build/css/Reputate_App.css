@@ -77,6 +77,10 @@ header {
     align-items: center;
 }
 
+.header__picture {
+    display: none;
+}
+
 .header__wrap {
     display: flex;
     flex-direction: column;
@@ -212,6 +216,10 @@ nav {
     height: 227px;
     flex-direction: column;
     justify-content: center;
+}
+
+.block-point {
+    display: flex;
 }
 
 .headline {
@@ -1262,6 +1270,43 @@ color: #e1e1e1;
 
 
 @media screen and (max-width: 1440px) {
+
+    .hero-block {
+    display: flex;
+    flex-direction: column;
+    background: url(../../build/img/header/header_back.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    background-position: right;
+}
+
+.header__block-text {
+    align-items: baseline;
+    margin-top: 416px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1256px;
+    margin-bottom: 49px;
+}
+
+.header__block-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1256px;
+}
+
+picture {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.img-arguments-picture {
+    display: flex;
+}
 .content {
     padding: 0 72px;
     width: 100%;
@@ -1349,14 +1394,15 @@ color: #e1e1e1;
     max-width: 384px;
     height: 355px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .advantages-our-service__blocks-advantages {
-    display: flex;
-    margin-top: 298px;
-    justify-content: space-between;
-    width: 1192px;
-    height: 513px;
+    margin-top: 0;
+    max-width: 1192px;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .PR-process__frame {
@@ -1411,14 +1457,24 @@ width: 60px;
 
 
 @media screen and (max-width: 1200px) {
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    background: url(../../build/img/header/header_back.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    background-position: right;
+}
     .content {
     padding: 0 0px;
     width: 100%;
 }
 
 header {
-    height: 950px;
-    background: url(../../build/img/header/header_back_tablet.png);
     background-position: right;
 }
 
@@ -1520,6 +1576,12 @@ nav {
 
 .header__logo {
     display: flex;
+}
+
+picture {
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 .nav__burger-menu {
@@ -1640,7 +1702,7 @@ nav {
 }
 
 .block-point {
-    display: none;
+    display: flex;
 }
 
 .buttons-both-block {
@@ -1718,7 +1780,6 @@ picture {
 
 
 .arguments__button {
-    font-weight: 400;
     font-size: 8px;
     color: #2f2f2f;
     width: fit-content;
@@ -2243,15 +2304,31 @@ footer {
 }
 }
 @media screen and (max-width: 1024px) {
+
+    .hero-block {
+    display: flex;
+    flex-direction: column;
+    background: url(../../build/img/header/header_back.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    background-position: right;
+}
     .content {
     padding: 0 0px;
     width: 100%;
 }
 
 header {
-    height: 950px;
-    background: url(../../build/img/header/header_back_tablet.png);
     background-position: right;
+}
+
+picture {
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 .header__block-text-picture {
@@ -2436,7 +2513,8 @@ nav {
 }
 
 .header__block-text-wrapper {
-    padding: 0 20px;
+    max-width: 984px;
+    padding-left: 50px;
 }
 
 .headline {
@@ -2539,7 +2617,6 @@ picture {
     width: auto;
 }
 .arguments__button {
-    font-weight: 400;
     font-size: 8px;
     color: #2f2f2f;
     width: fit-content;
@@ -3026,6 +3103,12 @@ footer {
     margin-top: 20px;
 }
 
+.footer__social-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .mobile-menu-links {
     position: absolute;
     top: 684px;
@@ -3065,14 +3148,30 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+picture {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+}
     .content {
     padding: 0 0px;
     width: 100%;
 }
 
 header {
-    height: 950px;
-    background: url(../../build/img/header/header_back_tablet.png);
+    height: auto;
     background-position: right;
 }
 
@@ -3251,7 +3350,8 @@ nav {
 }
 
 .header__block-text-wrapper {
-    padding: 0 20px;
+    max-width: 650px;
+    padding-left: 40px;
 }
 
 .headline {
@@ -3858,13 +3958,32 @@ footer {
     display: none;
 }
 
+.footer__social-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 
 }
 
 @media screen and (max-width: 640px) {
+
+
     body {
     width: 100%;
     padding: 0;
+}
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
 }
 nav {
     margin-top: 0;
@@ -3880,11 +3999,10 @@ nav {
     display: none;
 }
 header {
-    height: 622px;
     width: 100%;
-    background: url(../../build/img/header/header_back-mobile.png);
     position: relative;
     background-size: cover;
+    height: auto;
 }
 .header__block-text-picture {
     display: flex;
@@ -4250,7 +4368,6 @@ background: rgba(255, 255, 255, 0.5);
     height: auto;
 }
 .arguments__button {
-    font-weight: 400;
     font-size: 8px;
     color: #2f2f2f;
     width: fit-content;
@@ -4388,7 +4505,9 @@ background: rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
     font-size: 12px;
     height: auto;
-    padding-left: 0;
+    padding-left: 30px;
+    margin-left: 0;
+    width: 100%;
 }
 .advantages-our-service__wrap {
     width: 100%;
@@ -4507,9 +4626,7 @@ background: rgba(255, 255, 255, 0.5);
 }
 
 .advantages-our-service__advantages-describe {
-    width: 100%;
-    flex-direction: column;
-    align-items: baseline;
+    margin-bottom: 0;
 }
 
 .advantages-our-service__headline {
@@ -4780,6 +4897,20 @@ footer {
     width: 100%;
     padding: 0;
 }
+
+    .hero-block {
+    display: flex;
+    flex-direction: column;
+    background: url(../../build/img/header/header_back-mobile.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.header__picture {
+    display: flex;
+}
 nav {
     border-radius: 0 0 10px 10px;
     padding: 7px 39px;
@@ -4807,11 +4938,10 @@ nav {
     display: none;
 }
 header {
-    height: 622px;
     width: 100%;
-    background: url(../../build/img/header/header_back-mobile.png);
     position: relative;
     background-size: cover;
+    height: auto;
 }
 .header__block-text-picture {
     display: flex;
@@ -5182,7 +5312,6 @@ background: rgba(255, 255, 255, 0.5);
     height: auto;
 }
 .arguments__button {
-    font-weight: 400;
     font-size: 8px;
     color: #2f2f2f;
     width: fit-content;
@@ -5301,10 +5430,14 @@ background: rgba(255, 255, 255, 0.5);
 
 .PR-process__opportunities-describe-small-block {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     height: auto;
     margin-top: -10px;
     z-index: -1;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
 }
 
 .PR-process__opportunities-describe {
@@ -5728,6 +5861,15 @@ footer {
 
 @media screen and (min-width: 380px) and (max-width:425px) {
 
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
     nav {
     border-radius: 0 0 10px 10px;
     padding: 7px 39px;
@@ -5738,6 +5880,10 @@ footer {
 }
 .block-advantage {
     margin-left: 35px;
+}
+
+.header__picture {
+    display: flex;
 }
 .footer__link {
     width: fit-content;
@@ -5803,6 +5949,16 @@ footer {
 }
 @media screen and (min-width: 320px) and (max-width:380px) {
 
+    .hero-block {
+    display: flex;
+    flex-direction: column;
+    background: url(../../build/img/header/header_back-mobile.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
 nav {
     border-radius: 0 0 10px 10px;
     padding: 7px 39px;
@@ -5831,6 +5987,10 @@ nav {
     z-index: 67;
     background: #fff;
     cursor: pointer;
+}
+
+.header__picture {
+    display: flex;
 }
 
 .social_block-mobile {
