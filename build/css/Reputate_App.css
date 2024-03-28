@@ -1283,6 +1283,12 @@ color: #e1e1e1;
     background-position: right;
 }
 
+header {
+    height: auto;
+    background-position: right;
+    top: 30px;
+}
+
 .header__block-text {
     align-items: baseline;
     margin-top: 416px;
@@ -1475,7 +1481,9 @@ width: 60px;
 }
 
 header {
+    height: auto;
     background-position: right;
+    top: 30px;
 }
 
 .header__block-text-picture {
@@ -2322,7 +2330,9 @@ footer {
 }
 
 header {
+    height: auto;
     background-position: right;
+    top: 30px;
 }
 
 picture {
@@ -3173,6 +3183,7 @@ picture {
 header {
     height: auto;
     background-position: right;
+    top: 30px;
 }
 
 .header__block-text-picture {
