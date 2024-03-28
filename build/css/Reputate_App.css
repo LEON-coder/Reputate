@@ -109,7 +109,6 @@ nav {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     max-width: 1440px;
     width: 90%;
-    border-radius: 40px;
 }
 .header__block-text-picture {
     display: none;
