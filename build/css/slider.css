@@ -837,7 +837,7 @@
 }
 .offers__header {
     display: flex;
-    z-index: 56;
+    z-index: 50;
     position: absolute;
     top: 50%;
     width: 100%;
