@@ -72,6 +72,7 @@ header {
     left: 0;
     right: 0;
     z-index: 56;
+    margin-top: 50px;
 }
 
 .hero-block {
@@ -82,7 +83,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .header__picture {
@@ -95,7 +100,7 @@ header {
     width: 100%;
     align-items: center;
     max-width: 1920px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 nav {
@@ -1286,7 +1291,6 @@ color: #e1e1e1;
 header {
     height: auto;
     background-position: right;
-    top: 30px;
 }
 
 .header__block-text {
@@ -1478,17 +1482,11 @@ width: 60px;
     width: 100%;
 }
 
-header {
-    height: auto;
-    background-position: right;
-    top: 30px;
-}
-
 .header__block-text-picture {
     display: none;
 }
 .header__wrap {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .header__logo--mobile {
@@ -1669,7 +1667,7 @@ picture {
 }
 
 .header__block-text-wrapper {
-    padding: 0 20px;
+    padding-left: 50px;
 }
 
 .headline {
@@ -2328,7 +2326,6 @@ footer {
 header {
     height: auto;
     background-position: right;
-    top: 30px;
 }
 
 picture {
@@ -2342,7 +2339,7 @@ picture {
 }
 .header__wrap {
     margin-top: 0;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 50px;
 }
 
@@ -3180,8 +3177,8 @@ picture {
 header {
     height: auto;
     background-position: right;
-    top: 30px;
     border-radius: 20px;
+
 }
 
 .header__block-text-picture {
