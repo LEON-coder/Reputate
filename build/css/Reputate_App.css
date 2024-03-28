@@ -1271,14 +1271,7 @@ color: #e1e1e1;
 
 @media screen and (max-width: 1440px) {
 
-    .hero-block {
-    display: flex;
-    flex-direction: column;
-    background: url(../../build/img/header/header_back.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
+.hero-block {
     height: 100vh;
     background-position: right;
 }
