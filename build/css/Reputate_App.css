@@ -2072,7 +2072,6 @@ picture {
     padding-right: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .beta-out {
@@ -2186,19 +2185,16 @@ picture {
     width: 100%;
     flex-direction: column;
     align-items: baseline;
-    padding-left: 35px;
+    padding-left: 24px;
+    height: auto;
+    margin-bottom: 0;
 }
 
 .advantages-our-service__headline {
-    font-family: "Days One", sans-serif;
-    display: flex;
     width: auto;
-    height: 106px;
-    font-weight: 400;
+    height: auto;
     font-size: 16px;
-    color: #000;
 }
-
 .advantages-second-block {
     display: flex;
     flex-direction: column;
@@ -2207,11 +2203,11 @@ picture {
 
 .advantages-our-service__blocks-advantages {
     display: flex;
-    margin-top: 298px;
     justify-content: space-between;
     width: 100%;
-    height: auto;
-    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .block-advantage__button {
