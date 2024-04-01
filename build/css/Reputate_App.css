@@ -1642,6 +1642,7 @@ width: 60px;
 .hero-block {
     height: 100vh;
     background-size: cover;
+    padding-left: 50px;
 }
     .content {
     padding: 0 0px;
@@ -1829,7 +1830,7 @@ picture {
 }
 
 .header__block-text-wrapper {
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
 .headline {
@@ -2459,7 +2460,7 @@ footer {
 }
 @media screen and (max-width: 1024px) {
 
-    .hero-block {
+.hero-block {
     display: flex;
     flex-direction: column;
     background: url(../../build/img/header/header_back.jpg);
@@ -2469,6 +2470,7 @@ footer {
     align-items: center;
     height: 100vh;
     background-position: right;
+    padding-left: 0;
 }
     .content {
     padding: 0 0px;
@@ -3313,6 +3315,7 @@ picture {
 
 .hero-block {
     border-radius: 20px;
+    padding-left: 0;
 }
     .content {
     padding: 0 0px;
@@ -3594,6 +3597,10 @@ nav {
     padding: 0 0px;
     display: flex;
     height: 400px;
+}
+.arguments__button {
+    width: fit-content;
+    font-size: 0.8rem;
 }
 
 .arguments__blocks-slider {
