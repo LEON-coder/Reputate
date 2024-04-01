@@ -1945,10 +1945,7 @@ picture {
 
 
 .arguments__button {
-    font-size: 8px;
-    color: #2f2f2f;
     width: fit-content;
-    height: 20px;
 }
 
 .arguments__button:hover {
@@ -2301,6 +2298,11 @@ picture {
     height: auto;
     margin-left: 5px;
     padding: 11px 10px 11px 5px;
+}
+
+.women-user {
+    width: 60px;
+    height: 60px;
 }
 
 .trusting-block {
@@ -2776,12 +2778,8 @@ picture {
     width: auto;
 }
 .arguments__button {
-    font-size: 8px;
-    color: #2f2f2f;
     width: fit-content;
-    height: 20px;
 }
-
 .arguments__button:hover {
     font-family: "Days One", sans-serif;
     color: #1976d2;
@@ -3047,10 +3045,11 @@ picture {
 }
 
 .advantages-our-service__blocks-advantages {
-    margin-top: 30px;
-    max-width: 700px;
+    margin-top: 0px;
+    max-width: 1331px;
     padding-left: 0;
     margin-bottom: 30px;
+    width: 70%;
 }
 
 .block-advantage__button {
@@ -3100,16 +3099,17 @@ picture {
     height: 18px;
 }
 .block-users-wrap {
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    max-width: 1200px;
+    justify-content: space-between;
 }
 
 .block-users-comments {
-    max-width: 874px;
     height: auto;
     width: 100%;
     justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1000px;
 }
 .promo-testing-and-button-block {
     display: flex;
@@ -3128,6 +3128,11 @@ picture {
     height: auto;
 }
 
+.women-user {
+    width: 60px;
+    height: 60px;
+}
+
 .review {
     max-width: 105px;
     width: 50%;
@@ -3140,9 +3145,9 @@ picture {
 }
 
 .trusting-block {
-    max-width: 292px;
-    width: 100%;
     margin-top: 20px;
+    padding-left: 24px;
+    box-sizing: border-box;
 }
 
 .trusting-link {
@@ -3983,7 +3988,10 @@ nav {
     height: auto;
     margin-bottom: 9px;
 }
-
+.women-user {
+    width: 60px;
+    height: 60px;
+}
 footer {
     margin-top: 20px;
     display: flex;
@@ -4124,14 +4132,13 @@ header {
     top: 0;
 }
 .hero-block {
-    display: flex;
-    flex-direction: column;
     background: url(../../build/img/header/header_back-mobile.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     padding-top: 60px;
+    height: auto;
 }
 
 .header__picture {
@@ -4421,6 +4428,7 @@ background: rgba(255, 255, 255, 0.5);
 }
 .header__block-text {
     margin-top: auto;
+    margin-bottom: 0;
 }
 
 .mobile-enter-button {
@@ -4875,12 +4883,8 @@ background: rgba(255, 255, 255, 0.5);
     justify-content: space-between;
 }
 .promo-testing-and-button-block {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .block-user-comment {
@@ -5058,6 +5062,16 @@ footer {
     display: flex;
     width: auto;
     padding-left: 10px;
+}
+
+.footer__phone_mail-blocks {
+    display: flex;
+    margin-top: 0px;
+}
+
+.women-user {
+    width: 60px;
+    height: 60px;
 }
 .phone-block:hover, .mail-block:hover {
     border-radius: 20px;
