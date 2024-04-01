@@ -2426,6 +2426,11 @@ footer {
     margin-top: 20px;
 }
 
+.footer__phone_mail-blocks {
+    display: flex;
+    margin-top: 0px;
+}
+
 .mobile-menu-links {
     position: absolute;
     top: 684px;
@@ -2442,12 +2447,21 @@ footer {
 .footer__social-block {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+}
+
+.footer__social-headline {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    color: #e1e1e1;
 }
 
 .socilal-icons {
     margin-top: 5px;
     width: 253px;
     align-items: center;
+    justify-content: space-between;
 }
 .social-icon {
     display: flex;
@@ -3274,7 +3288,19 @@ footer {
 .footer__social-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    width: fit-content;
+}
+
+.footer__social-headline {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    color: #e1e1e1;
+}
+
+.footer__phone_mail-blocks {
+    display: flex;
+    margin-top: 5px;
 }
 
 .mobile-menu-links {
@@ -4085,6 +4111,13 @@ footer {
     height: 85px;
 }
 
+.footer__social-headline {
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    color: #e1e1e1;
+}
+
 .enter-button {
     width: 102px;
     height: 37px;
@@ -4118,9 +4151,13 @@ footer {
 .footer__social-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    width: fit-content;
 }
 
+.footer__phone_mail-blocks {
+    display: flex;
+    margin-top: 5px;
+}
 
 }
 
@@ -5040,6 +5077,7 @@ footer {
 .footer__social-block {
     display: flex;
     flex-direction: column;
+    width: fit-content;
 }
 
 .social-icon {
