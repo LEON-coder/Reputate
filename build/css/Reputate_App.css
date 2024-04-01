@@ -1466,6 +1466,9 @@ width: 60px;
 .hero-block {
     height: 100vh;
     background-position: right;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-left: 86px;
 }
 .header__block-text {
     width: auto;
@@ -4123,6 +4126,7 @@ header {
     align-items: center;
     padding-top: 60px;
     height: auto;
+    padding-left: 0;
 }
 
 .header__picture {
@@ -5083,13 +5087,14 @@ header {
 }
 
 .hero-block {
-    display: flex;
-    flex-direction: column;
     background: url(../../build/img/header/header_back-mobile.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+    padding-top: 60px;
+    height: auto;
+    padding-left: 0;
 }
 
 .header__picture {
