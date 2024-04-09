@@ -3351,6 +3351,8 @@ picture {
 .hero-block {
     border-radius: 20px;
     padding-left: 0;
+background-position: 90%;
+
 }
     .content {
     padding: 0 0px;
